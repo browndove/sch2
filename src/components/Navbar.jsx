@@ -10,7 +10,7 @@ const Navbar = () => {
   const Dropdown = () => {
     return (
       <div
-        className="absolute mt-[30rem] w-[65rem] rounded-[12px] left-[-10rem] py-4 px-[45px] border-[1px] border-gray-200 bg-[#EDF2F4]"
+        className="absolute mt-[32rem] w-[65rem] rounded-[12px] left-[-10rem] py-4 px-[45px] border-[1px] border-gray-200 bg-[#EDF2F4]"
         onMouseEnter={() => setDropdownVisible(true)}
         onMouseLeave={() => {
           clearTimeout(hideDropdownTimer.current);
