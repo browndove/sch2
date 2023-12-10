@@ -1,20 +1,20 @@
 import React from 'react';
-import com from "../assets/community.svg";
 import strapi from "../assets/strapi.jpg"
 import { motion } from 'framer-motion';
-import enter from "../assets/enterprise.svg"
-import shopping from "../assets/shopping.svg"
 import cloud from "../assets/cloud.svg"
-import hosting from "../assets/hosting.svg"
-import headset from "../assets/headset.svg"
-import css from "../assets/css.svg"
-import international from "../assets/international.svg"
+import coding from "../assets/coding.svg"
+import content from "../assets/content.svg"
+import teams from "../assets/user.svg"
+import come from "../assets/ecommerce.svg"
+import corp from "../assets/corporate.svg"
+import app from "../assets/app.svg"
+import study from "../assets/book.svg"
 
 const Products = () => {
 
     const fadeAnimation = {
         hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, x:0, transition: { duration: 1.5 } },
+        visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
       };
 
 
@@ -23,15 +23,15 @@ const Products = () => {
     <motion.div className=''>
     <motion.div className='flex flex-row justify-between items-center'>
       <motion.div className='flex flex-col ' variants={fadeAnimation} initial="hidden" animate="visible">
-          <div className='text-gray-400 text-sm'>PRODUCT</div>
+          <div className='text-gray-400 text-sm'>Terms</div>
           <div className='flex-col'>
             <ul className='pr-3 cursor-pointer'>
               <li >
                 <div className='ml-4 mt-4 flex items-center py-2 px-3 hover:bg-[#32CBFF] rounded-md'>
                   <div className='flex flex-row items-center '>
-                    <img src={com} alt="" className='w-7' />
+                    <img src={coding} alt="" className='w-7' />
                     <div className='flex flex-col ml-2'>
-                      <span className='text-sm hover:text-blue-500'>Community Edition</span>
+                      <span className='text-sm hover:text-blue-500'>Developers</span>
                       <p className='text-sm text-gray-400 hover:text-white '>The leading Open-Source <br /> Headless CMS</p>
                     </div>
                   </div>
@@ -42,21 +42,22 @@ const Products = () => {
               <li>
                 <div className='ml-4 mt-4 flex items-center py-2 px-3 hover:bg-[#32CBFF] rounded-md'>
                   <div className='flex flex-row items-center'>
-                    <img src={enter} alt="" className='w-7' />
+                    <img src={content} alt="" className='w-7' />
                     <div className='flex flex-col ml-2'>
-                      <span className='text-sm hover:text-blue-500'>Enterprise Edition</span>
+                      <span className='text-sm hover:text-blue-500'>Content Mangers</span>
                       <p className='text-sm text-gray-400 hover:text-white'>A self-hosted  <br />and Enterprise-ready Edition</p>
                     </div>
                   </div>
                 </div>
+
               </li>
 
               <li>
                 <div className='ml-4 mt-4 flex items-center py-2 px-3 hover:bg-[#32CBFF] rounded-md'>
                   <div className='flex flex-row items-center'>
-                    <img src={shopping} alt="" className='w-7' />
+                    <img src={teams} alt="" className='w-7' />
                     <div className='flex flex-col ml-2'>
-                      <span className='text-sm hover:text-blue-500'>Marketplace</span>
+                      <span className='text-sm hover:text-blue-500'>Business Teams</span>
                       <p className='text-sm text-gray-400 hover:text-white'>A Marketplace of plugins to  <br /> add features or integrations.</p>
                     </div>
                   </div>
@@ -80,16 +81,16 @@ const Products = () => {
 
         {/* FEATURES */}
         <motion.div className='flex flex-col absolute mt-[-80px] left-[23rem] ' variants={fadeAnimation} initial="hidden" animate="visible">
-        <div className='text-gray-400 text-sm '>FEATURES</div>
+        <div className='text-gray-400 text-sm '>USE CASES</div>
         <div className='flex-col '>
             <ul className='px-3'>
               <li>
                 <div className='ml-1 mt-4 flex items-center py-2 px-3 hover:bg-[#32CBFF] rounded-md'>
                   <div className='flex flex-row items-center'>
-                    <img src={hosting} alt="" className='w-8' />
+                    <img src={come} alt="" className='w-8' />
                     <div className='flex flex-col ml-2'>
-                      <span className='text-sm hover:text-blue-500'>Content Types Builder</span>
-                      <p className='text-sm text-gray-400 hover:text-white '>Structured yet flexible content</p>
+                      <span className='text-sm hover:text-blue-500'>Ecommerce</span>
+                      <p className='text-sm text-gray-400 hover:text-white '>Level up your eCommerce <br/> experiences</p>
                     </div>
                   </div>
                 </div>
@@ -99,10 +100,10 @@ const Products = () => {
               <li>
                 <div className='ml-1 mt-4 flex items-center py-2 px-3 hover:bg-[#32CBFF] rounded-md'>
                   <div className='flex flex-row items-center'>
-                    <img src={headset} alt="" className='w-8' />
+                    <img src={corp} alt="" className='w-8' />
                     <div className='flex flex-col ml-2'>
-                      <span className='text-sm hover:text-blue-500'>Media Library</span>
-                      <p className='text-sm text-gray-400 hover:text-white'>Advanced Media Management</p>
+                      <span className='text-sm hover:text-blue-500'>Corporate Site</span>
+                      <p className='text-sm text-gray-400 hover:text-white'>Manage your brand narrative</p>
                     </div>
                   </div>
                 </div>
@@ -111,10 +112,10 @@ const Products = () => {
               <li>
                 <div className='ml-1 mt-4 flex items-center py-2 px-3 hover:bg-[#32CBFF] rounded-md'>
                   <div className='flex flex-row items-center'>
-                    <img src={css} alt="" className='w-8' />
+                    <img src={app} alt="" className='w-8' />
                     <div className='flex flex-col ml-2'>
-                      <span className='text-sm hover:text-blue-500'>Roles & Permissions</span>
-                      <p className='text-sm text-gray-400 hover:text-white'>Granular access controls</p>
+                      <span className='text-sm hover:text-blue-500'>Mobile applications</span>
+                      <p className='text-sm text-gray-400 hover:text-white'>One CMS, any devices</p>
                     </div>
                   </div>
                 </div>
@@ -123,10 +124,10 @@ const Products = () => {
               <li>
                 <div className='ml-1 mt-4 flex items-center py-2 px-3 hover:bg-[#32CBFF] rounded-md'>
                   <div className='flex flex-row items-center'>
-                    <img src={international} alt="" className='w-8' />
+                    <img src={study} alt="" className='w-8' />
                     <div className='flex flex-col ml-2'>
-                      <span className='text-sm hover:text-blue-500'>Internationalization</span>
-                      <p className='text-sm text-gray-400 hover:text-white'>Powerful Multilingual websites</p>
+                      <span className='text-sm hover:text-blue-500'>Case studies</span>
+                      <p className='text-sm text-gray-400 hover:text-white'>Discover who uses Strapi</p>
                     </div>
                   </div>
                 </div>
@@ -139,7 +140,7 @@ const Products = () => {
         {/* ENTERPRISE EDITION */}
         <motion.div className='flex flex-col' variants={fadeAnimation} initial="hidden" animate="visible">
           
-          <div className='text-gray-400 text-sm absolute top-[13px] left-[70%]  mt-1'>ENTERPRISE EDITION</div>
+          <div className='text-gray-400 text-sm absolute top-[13px] left-[70%]  mt-1'>INDUSTRIES</div>
           <div className=' absolute top-[4.5rem] left-[67%] '>
             <img src={strapi} alt="" className='w-[19rem] h-[12rem] rounded-md'/>
             <div className='py-4 w-[19rem] rounded-[9px] bg-[#32CBFF] text-white font-normal text-lg flex justify-center mt-8'>Try the Enterprise Edition</div>
