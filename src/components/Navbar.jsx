@@ -10,7 +10,7 @@ import Solutions from "./Solutions"
 const Navbar = () => {
     const Dropdown = () => {
         return (
-          <div className="absolute mt-[32rem] w-[65rem] rounded-[12px] left-[-10rem] py-4 px-[45px] border-[1px] border-gray-200 bg-[#EDF2F4] z-[10000]">
+          <div className="absolute mt-[34.5rem] w-[65rem] rounded-[12px] left-[-10rem] py-4 pb-[4.3rem] px-[45px] border-[1px] border-gray-200 bg-[#EDF2F4] z-[10000]">
             <Products />
           </div>
         );
@@ -18,7 +18,7 @@ const Navbar = () => {
     
       const Dropdown2 = () => {
         return (
-          <div className="absolute mt-[32rem] w-[65rem] rounded-[12px] left-[-10rem] py-4 px-[45px] border-[1px] border-gray-200 bg-[#EDF2F4] z-[999] ">
+          <div className="absolute mt-[34.5rem] w-[65rem] rounded-[12px] left-[-10rem] py-4 pb-[4.3rem] px-[45px] border-[1px] border-gray-200 bg-[#EDF2F4] z-[999] ">
             <Solutions />
           </div>
         );
